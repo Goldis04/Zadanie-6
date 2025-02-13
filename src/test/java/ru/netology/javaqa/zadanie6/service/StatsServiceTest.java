@@ -20,7 +20,7 @@ public class StatsServiceTest {
     void testCalculateAverageSales() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12 ;
+        long expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
         long actual = service.calculateAverageSales(sales);
 
         Assertions.assertEquals(expected, actual);
@@ -56,7 +56,6 @@ public class StatsServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
 
 
     @Test
